@@ -175,7 +175,7 @@ function displayCurrentDayForecast1(forecastWeather) {
         currentDayContainer.innerHTML += `
                 <div class="weather-row">
                     <p>${time}</p>
-                    <img src="http://openweathermap.org/img/wn/${weather.icon}.png" alt="hourly forcast">
+                    <img src="http://openweathermap.org/img/wn/${weather.icon}@2x.png" alt="hourly forcast">
                     <h6>${(weather.temp).toFixed(1)}°C</h6>
                 </div>
             `;
