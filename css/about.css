@@ -1,0 +1,246 @@
+/* Importing Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+/* Universal selector to reset margin, padding, box-sizing, and set default font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #15081A;
+  height: 100vh;
+  color: #fff;
+  font-family: Poppins;
+}
+
+nav {
+  width: 100%;
+  background-color: #1F212C;
+}
+
+nav div.logo {
+  width: 100%;
+  max-width: 450px;
+  padding: 25px 25px 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav div.logo h1 {
+  font-size: 20px;
+}
+
+nav div.logo div.menu {
+  display: none;
+}
+
+/* Styling for the main section */
+.class-section {
+  width: 100%;
+  /* Full width */
+  min-height: 100vh;
+  /* Minimum height to cover the full viewport */
+  display: flex;
+  /* Flexbox layout */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  background-color: #15081A;
+}
+
+/* Styling for the container */
+.container {
+  width: 80%;
+  /* 80% of the parent width */
+  display: block;
+  /* Block display */
+  margin: auto;
+  /* Center container */
+  padding-top: 50px;
+  /* Top padding */
+}
+
+/* Uncomment this block if you want a more defined container with background and shadow */
+/*
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+*/
+/* Styling for the content section */
+.content-section {
+  float: left;
+  /* Float left */
+  width: 55%;
+  /* 55% width */
+}
+
+.content-section h1 {
+  font-size: 50px;
+  /* Font size */
+  margin-bottom: 40px;
+  /* Bottom margin */
+  color: white;
+  /* Dark gray color */
+}
+
+/* Styling for the image section */
+.image-section {
+  padding-top: 140px;
+  float: right;
+  /* Float right */
+  width: 40%;
+  /* 40% width */
+}
+
+/* Styling for images within the image section */
+.image-section img {
+  width: 100%;
+  /* Full width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+/* Styling for titles */
+.title {
+  text-transform: uppercase;
+  /* Uppercase text */
+  font-size: 28px;
+  /* Font size */
+}
+
+/* Styling for headings within the content section */
+.class-content h3 {
+  margin-top: 20px;
+  /* Top margin */
+  color: #fff;
+  /* Dark gray color (#5d5d5d)*/
+  font-size: 30px;
+  /* Font size */
+}
+
+/* Styling for paragraphs within the content section */
+.class-content p {
+  margin-top: 10px;
+  /* Top margin */
+  font-size: 18px;
+  /* Font size */
+  line-height: 1.5;
+  /* Line height */
+  color: white;
+  /* Medium gray color (#666)*/
+}
+
+/* Styling for the social media links container */
+.social {
+  margin: 40px 0px;
+  /* Margin on all sides */
+}
+
+/* Styling for icons within the social media links */
+.social i {
+  color: #fff;
+  /* Brown color (a52a2a) */
+  font-size: 30px;
+  /* Font size */
+  padding: 0px 10px;
+  /* Padding on left and right */
+}
+
+/* Media query for screens with a max width of 768px */
+@media screen and (max-width: 768px) {
+  /* Adjust container styling for smaller screens */
+  .container {
+    width: 80%;
+    /* 80% width */
+    display: block;
+    /* Block display */
+    margin: auto;
+    /* Center container */
+    padding-top: 50px;
+    /* Reduced top padding */
+  }
+  /* Adjust content section styling for smaller screens */
+  .content-section {
+    float: none;
+    /* Remove float */
+    width: 100%;
+    /* Full width */
+    display: block;
+    /* Block display */
+    margin: auto;
+    /* Center content section */
+  }
+  /* Adjust image section styling for smaller screens */
+  .image-section {
+    padding-top: 10px;
+    /*change padding*/
+    float: none;
+    /* Remove float */
+    width: 100%;
+    /* Full width */
+  }
+  /* Adjust image styling for smaller screens */
+  .image-section img {
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Block display */
+    margin: auto;
+    /* Center image */
+  }
+  /* Adjust title styling for smaller screens */
+  .title {
+    text-align: center;
+    /* Center text */
+    font-size: 19px;
+    /* Smaller font size */
+  }
+  /* Adjust social media links styling for smaller screens */
+  .social {
+    text-align: center;
+    /* Center links */
+  }
+}
+@media (min-width: 768px) {
+  nav div.logo {
+    max-width: 1280px;
+    padding: 25px 40px;
+  }
+  nav div.logo div.menu {
+    display: inline;
+  }
+  nav div.logo div.menu ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+  }
+  nav div.logo div.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  nav div.logo div.menu ul li a:hover {
+    color: #fff700;
+  }
+  nav div.logo img {
+    display: none;
+  }
+}/*# sourceMappingURL=about.css.map */
